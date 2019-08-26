@@ -1,6 +1,6 @@
 ﻿namespace Login_2._0
 {
-    partial class Form1
+    partial class formulario
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -68,6 +68,7 @@
             this.TbContra.PasswordChar = 'x';
             this.TbContra.Size = new System.Drawing.Size(100, 20);
             this.TbContra.TabIndex = 3;
+            this.TbContra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TbContra_KeyPress);
             // 
             // BtSalir
             // 
@@ -89,7 +90,7 @@
             this.BtIniciar.UseVisualStyleBackColor = true;
             this.BtIniciar.Click += new System.EventHandler(this.BtIniciar_Click);
             // 
-            // Form1
+            // formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +101,7 @@
             this.Controls.Add(this.TbNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LbNombre);
-            this.Name = "Form1";
+            this.Name = "formulario";
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

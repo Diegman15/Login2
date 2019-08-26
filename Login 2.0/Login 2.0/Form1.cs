@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Login_2._0
 {
-    public partial class Form1 : Form
+    public partial class formulario : Form
     {
-        public Form1()
+        public formulario()
         {
             InitializeComponent();
         }
@@ -27,6 +27,10 @@ namespace Login_2._0
             if (TbNombre.Text == "juancho" && TbContra.Text == "123tamarindo")
             {
                 MessageBox.Show("Bienvenido Sr Juancho");
+                this.Hide();
+                ventana2 CursosVentana = new ventana2();
+                CursosVentana.Show();
+                this.Visible = false;
             }
             else
             {
@@ -34,6 +38,28 @@ namespace Login_2._0
                 TbNombre.Text = "";
                 TbContra.Text = "";
                 TbNombre.Focus();
+            }
+        }
+
+        private void TbContra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if((int)e.KeyChar==(int)Keys.Enter)
+            {
+                if (TbNombre.Text == "juancho" && TbContra.Text == "123tamarindo")
+                {
+                    MessageBox.Show("Bienvenido Sr Juancho");
+                    this.Hide();
+                    ventana2 CursosVentana = new ventana2();
+                    CursosVentana.Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña no valido");
+                    TbNombre.Text = "";
+                    TbContra.Text = "";
+                    TbNombre.Focus();
+                }
             }
         }
     }

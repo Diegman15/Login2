@@ -1,6 +1,6 @@
 ﻿namespace Login_2._0
 {
-    partial class Form2
+    partial class ventana2
     {
         /// <summary>
         /// Required designer variable.
@@ -118,7 +118,7 @@
             this.RbPaypal.Text = "PayPal";
             this.RbPaypal.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // ventana2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,7 +131,7 @@
             this.Controls.Add(this.CbVCs);
             this.Controls.Add(this.LbPago);
             this.Controls.Add(this.LbVenta);
-            this.Name = "Form2";
+            this.Name = "ventana2";
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
